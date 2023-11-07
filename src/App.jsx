@@ -23,7 +23,7 @@ function Menu() {
     <main className="menu">
       <h2>Our Menu</h2>
 
-      {numPizzas > 0 && (
+      {numPizzas > 0 ? (
         <ul className="pizzas">
           {pizzas.map((data) => (
             <Pizza
@@ -35,7 +35,7 @@ function Menu() {
             />
           ))}
         </ul>
-      )}
+      ) : null}
     </main>
   );
 }
